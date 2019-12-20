@@ -1,0 +1,26 @@
+apply plugin: 'java'
+
+group 'com.a2937'
+version '0.0.1'
+description 'Adds a way to store music locally on Heroku for AvaIre'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    //
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    // Due to jitpack not wanting to compile the sources from github,
+    // we're using the raw Jar file instead.
+    //implementation 'com.github.User:Repo:Tag'
+    implementation platform('software.amazon.awssdk:bom:2.5.29')
+    implementation 'software.amazon.awssdk:kinesis'
+    // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-dynamodb', version: '1.11.696'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+   compileOnly files('./../avaire/AvaIre.jar')
+}

@@ -1,0 +1,6 @@
+name: 'CloudCube'
+main: 'com.a2937.cloudcube.CloudCubeMain'
+version: '0.0.4'
+author: 'Chara <Chara#6274>'
+description: 'Adds CloudCube services from Heroku to AvaIre.'
+requires: '0.7.71'

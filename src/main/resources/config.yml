@@ -1,0 +1,27 @@
+#--------------------------------------------------------------------------
+# Welcome to the CloudCube Plugin Configuration
+#--------------------------------------------------------------------------
+#
+# CloudCube is a storage linker provided by Heroku that uses Amazon AWS
+# web hosting buckets to hold data. This plugin directly uses the storage
+# provider to store sound
+#
+#
+# User id and password for BotLibre are only required if the bot is private
+# so authorization can occur.
+#
+# Below you'll find all the configurable options for plugin.
+#
+# The configuration is written in a format known as YAML, you can learn
+# more about the format at https://learnxinyminutes.com/docs/yaml
+#
+# Need to validate if the config has no errors and will pass Avas config
+# management system? Try out https://codebeautify.org/yaml-validator
+#
+# Got any questions? Contact the development team on the official support
+# server for Ava at https://avairebot.com/support
+#
+awsBucketName: mycube
+awsCubeName: cloud-cube-eu
+aws_access_key_id: YOUR_ACCESS_KEY_ID
+aws_secret_access_key: YOUR_SECRET_ACCESS_KEY
